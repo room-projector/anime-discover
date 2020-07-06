@@ -3,6 +3,8 @@ class StateApi {
   constructor(rawData) {
     this.data = {
       animes: this.mapIntoObject(rawData.animes),
+      episode: true,
+      movie: true,
       searchTerm: '',
     };
 
@@ -57,8 +59,19 @@ class StateApi {
       .get(`https://api.jikan.moe/v3/search/anime?q=${searchTerm}`)
       .then((data) => {
         this.addAnimes(data.data.results);
-        console.log(data.data.results);
       });
+  };
+
+  setEpisode = (episode) => {
+    this.mergeWithState({
+      episode,
+    });
+  };
+
+  setMovie = (movie) => {
+    this.mergeWithState({
+      movie,
+    });
   };
 }
 
