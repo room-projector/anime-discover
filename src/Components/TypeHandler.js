@@ -20,17 +20,17 @@ class TypeHandler extends Component {
 
   checkEpisodeColor = () => {
     if (!this.state.episode) {
-      return 'green';
+      return ' #4d4dff';
     } else {
-      return 'red';
+      return 'silver';
     }
   };
 
   checkMovieColor = () => {
     if (!this.state.movie) {
-      return 'green';
+      return ' #4d4dff';
     } else {
-      return 'red';
+      return 'silver';
     }
   };
 
@@ -38,13 +38,33 @@ class TypeHandler extends Component {
     return (
       <div>
         <button
-          style={{ backgroundColor: `${this.checkEpisodeColor()}` }}
+          className="btn btn-primary"
+          style={{
+            backgroundColor: `${this.checkEpisodeColor()}`,
+            margin: '1rem',
+            marginLeft: '2rem',
+            borderRadius: '12px',
+            height: '2rem',
+            padding: '0.25rem',
+            fontSize: '1rem',
+            border: 'none',
+          }}
           onClick={this.handleEpisodesClick}
         >
           Episodes
         </button>
         <button
-          style={{ backgroundColor: `${this.checkMovieColor()}` }}
+          className="btn btn-primary"
+          style={{
+            backgroundColor: `${this.checkMovieColor()}`,
+            margin: '1rem',
+            marginLeft: '0rem',
+            borderRadius: '12px',
+            height: '2rem',
+            padding: '0.25rem',
+            fontSize: '1rem',
+            border: 'none',
+          }}
           onClick={this.handleMovieClick}
         >
           Movies

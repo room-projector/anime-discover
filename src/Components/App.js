@@ -66,14 +66,29 @@ class App extends React.Component {
 
     //filter anime by media type?
     return (
-      <div className="App">
-        <h1>Anime Discoverer!</h1>
-        <div>
-          Discover new anime! Type it out in the search! Press episodes for
-          episodic anime and movies for movies!
+      <div
+        className="App"
+        style={{
+          height: '135rem',
+          backgroundColor: '#010048',
+        }}
+      >
+        <div
+          className="jumbotron"
+          style={{
+            backgroundColor: '#03002e',
+            fontFamily:
+              'Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif',
+          }}
+        >
+          <h1>Anime Discoverer!</h1>
+          <div>
+            Discover new anime! Type it out in the search! Press episodes for
+            episodic anime and movies for movies!
+          </div>
         </div>
-        <TypeHandler />
         <SearchBar />
+        <TypeHandler />
         <AnimeCardList animes={animes} />
       </div>
     );

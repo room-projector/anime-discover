@@ -2,7 +2,7 @@ import storeProvider from './storeProvider';
 import React from 'react';
 
 const styles = {
-  title: { fontSize: '1.25rem' },
+  title: { fontSize: '1.25rem', width: '12rem' },
 };
 
 class AnimeCard extends React.PureComponent {
@@ -17,7 +17,7 @@ class AnimeCard extends React.PureComponent {
           className="card"
           style={{
             backgroundColor: 'rgb(0,0,0)',
-            backgroundColor: 'rgba(0,0,0,0.4)',
+            backgroundColor: 'rgba(0,0,0,0.5)',
             backgroundImage: `url('${anime.image_url}')`,
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
@@ -37,7 +37,10 @@ class AnimeCard extends React.PureComponent {
 
           {this.state.hover ? (
             <div>
-              {anime.synopsis} Read more <a href={anime.url}>here</a>
+              <div>{anime.synopsis}</div> Read more{' '}
+              <a href={anime.url} style={{ color: 'lightblue' }}>
+                here
+              </a>
             </div>
           ) : null}
         </button>
