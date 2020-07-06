@@ -17,7 +17,7 @@ class AnimeCard extends React.PureComponent {
           className="card"
           style={{
             backgroundColor: 'rgb(0,0,0)',
-            backgroundColor: 'rgba(0,0,0,0.7)',
+            backgroundColor: 'rgba(0,0,0,0.6)',
             backgroundImage: `url('${anime.image_url}')`,
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
@@ -29,6 +29,9 @@ class AnimeCard extends React.PureComponent {
             margin: '1rem',
             display: 'inline-block',
             minHeight: '10rem',
+            borderRadius: '12px',
+            boxShadow:
+              '0px 0px 40px 0px #4d4dff inset, -0px -0px 40px 0px #4d4dff inset',
           }}
           onMouseEnter={() => this.setState({ hover: true })}
           onMouseLeave={() => this.setState({ hover: false })}

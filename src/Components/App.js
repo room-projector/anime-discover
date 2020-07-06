@@ -69,7 +69,7 @@ class App extends React.Component {
       <div
         className="App"
         style={{
-          height: '142rem',
+          height: '100vh',
           backgroundColor: '#010048',
           bottom: '0px',
         }}
@@ -78,15 +78,15 @@ class App extends React.Component {
           className="jumbotron"
           style={{
             backgroundColor: '#03002e',
+            color: '#4d4dff',
           }}
         >
-          <h1 style={{ marginBottom: '2rem', fontSize: '300%' }}>
+          <h1
+            style={{ marginBottom: '2rem', fontSize: '370%', color: '#4d5fff' }}
+          >
             Anime Discoverer!
           </h1>
-          <div>
-            Discover new anime! Type it out in the search! Press episodes for
-            episodic anime and movies for movies!
-          </div>
+          <div>Discover new anime! Type it out in the search!</div>
         </div>
         <SearchBar />
         <TypeHandler />
@@ -103,6 +103,7 @@ class App extends React.Component {
           <a href="https://jikan.moe/?fbclid=IwAR1Evre_JQu1TfszBuYJ4-qVqjFb709mnWiaGmJ5QHQAG257BhmOxZcGpN0">
             here
           </a>
+          .
         </div>
       </div>
     );
