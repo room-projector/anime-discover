@@ -20,10 +20,10 @@ class SearchBar extends Component {
   doSearch = debounce(() => {
     if (this.state.searchTerm.length >= 3) {
       this.setState({ error: false });
-      this.props.store.setSearchTerm(this.state.searchTerm);
     } else {
       this.setState({ error: true });
     }
+    this.props.store.setSearchTerm(this.state.searchTerm);
   }, 500);
 
   handleSearch = (event) => {

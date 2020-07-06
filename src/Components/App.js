@@ -69,8 +69,9 @@ class App extends React.Component {
       <div
         className="App"
         style={{
-          height: '135rem',
+          height: '142rem',
           backgroundColor: '#010048',
+          bottom: '0px',
         }}
       >
         <div
@@ -79,7 +80,9 @@ class App extends React.Component {
             backgroundColor: '#03002e',
           }}
         >
-          <h1 style={{ marginBottom: '2rem' }}>Anime Discoverer!</h1>
+          <h1 style={{ marginBottom: '2rem', fontSize: '300%' }}>
+            Anime Discoverer!
+          </h1>
           <div>
             Discover new anime! Type it out in the search! Press episodes for
             episodic anime and movies for movies!
@@ -92,7 +95,7 @@ class App extends React.Component {
           style={{
             color: 'silver',
             marginLeft: '2rem',
-            minHeight: '100rem',
+            bottom: '0px',
           }}
         >
           This is a React search app that pulls data from a restful api based on
