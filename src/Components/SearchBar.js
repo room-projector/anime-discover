@@ -15,10 +15,15 @@ const styles = {
 };
 
 class SearchBar extends Component {
-  state = { searchTerm: '' };
+  state = { searchTerm: '', error: false };
 
   doSearch = debounce(() => {
-    this.props.store.setSearchTerm(this.state.searchTerm);
+    if (this.state.searchTerm.length >= 3) {
+      this.setState({ error: false });
+      this.props.store.setSearchTerm(this.state.searchTerm);
+    } else {
+      this.setState({ error: true });
+    }
   }, 500);
 
   handleSearch = (event) => {
@@ -38,6 +43,13 @@ class SearchBar extends Component {
           placeholder="Search for titles here!"
           onChange={this.handleSearch}
         ></input>
+        {this.state.error ? (
+          <div
+            style={{ color: 'red', marginLeft: '2rem', marginTop: '0.2rem' }}
+          >
+            Please three(3) or more characters!
+          </div>
+        ) : null}
       </div>
     );
   }

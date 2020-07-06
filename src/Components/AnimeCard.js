@@ -17,7 +17,7 @@ class AnimeCard extends React.PureComponent {
           className="card"
           style={{
             backgroundColor: 'rgb(0,0,0)',
-            backgroundColor: 'rgba(0,0,0,0.5)',
+            backgroundColor: 'rgba(0,0,0,0.7)',
             backgroundImage: `url('${anime.image_url}')`,
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',

@@ -16,7 +16,8 @@ code {
 }
 
 .jumbotron {
-  color: white;
+  color: snow;
+  font-family: 'TeX Gyre Adventor, URW Gothic L, sans-serif';
 }
 
 ::placeholder {

@@ -77,11 +77,9 @@ class App extends React.Component {
           className="jumbotron"
           style={{
             backgroundColor: '#03002e',
-            fontFamily:
-              'Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif',
           }}
         >
-          <h1>Anime Discoverer!</h1>
+          <h1 style={{ marginBottom: '2rem' }}>Anime Discoverer!</h1>
           <div>
             Discover new anime! Type it out in the search! Press episodes for
             episodic anime and movies for movies!
@@ -90,6 +88,19 @@ class App extends React.Component {
         <SearchBar />
         <TypeHandler />
         <AnimeCardList animes={animes} />
+        <div
+          style={{
+            color: 'silver',
+            marginLeft: '2rem',
+            minHeight: '100rem',
+          }}
+        >
+          This is a React search app that pulls data from a restful api based on
+          MyAnimeList.com. Check out their API{' '}
+          <a href="https://jikan.moe/?fbclid=IwAR1Evre_JQu1TfszBuYJ4-qVqjFb709mnWiaGmJ5QHQAG257BhmOxZcGpN0">
+            here
+          </a>
+        </div>
       </div>
     );
   }
