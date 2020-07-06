@@ -1,0 +1,10 @@
+{
+  "name": "state-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Matthew Liu <mliu78@jh.edu>",
+  "license": "MIT",
+  "dependencies": {
+    "lodash.pickby": "^4.6.0"
+  }
+}
