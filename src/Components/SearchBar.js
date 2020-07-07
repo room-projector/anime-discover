@@ -40,7 +40,7 @@ class SearchBar extends Component {
           className="form-control"
           type="search"
           value={this.state.searchTerm}
-          placeholder="Search for titles here!"
+          placeholder="Discover animes here!"
           onChange={this.handleSearch}
         ></input>
         {this.state.error ? (

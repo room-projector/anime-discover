@@ -86,7 +86,10 @@ class App extends React.Component {
           >
             Anime Discoverer!
           </h1>
-          <div>Discover new anime! Type it out in the search!</div>
+          <div>
+            Discover new anime while you're bored in quarantine! Type it out in
+            the search!
+          </div>
         </div>
         <SearchBar />
         <TypeHandler />
