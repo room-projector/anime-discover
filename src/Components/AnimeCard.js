@@ -37,7 +37,6 @@ class AnimeCard extends React.PureComponent {
           onMouseLeave={() => this.setState({ hover: false })}
         >
           <div style={styles.title}>{anime.title}</div>
-
           {this.state.hover ? (
             <div>
               <div>{anime.synopsis}</div> Read more{' '}
