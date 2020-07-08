@@ -101,12 +101,18 @@ class App extends React.Component {
             bottom: '0px',
           }}
         >
-          This is a React search app that pulls data from a restful api based on
+          This is a React search app utilizing a global state store/api
+          implemented using contexts that pulls data from a restful api based on
           MyAnimeList.com. Check out their API{' '}
           <a href="https://jikan.moe/?fbclid=IwAR1Evre_JQu1TfszBuYJ4-qVqjFb709mnWiaGmJ5QHQAG257BhmOxZcGpN0">
             here
           </a>
           .
+          <div>
+            {' '}
+            May be transitioning to redux for global state handling as I learn
+            it.
+          </div>
         </div>
       </div>
     );
